@@ -1,14 +1,1 @@
-edge-based martix
-
-
-edge table
-
-
-
-positive-direction table
-1 1 1
-
-
-adjacent link
-
-
+6 1 8 3 7
