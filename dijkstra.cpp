@@ -9,8 +9,8 @@ int main()
     freopen("output.txt", "w", stdout);
     int n, k;
     int a[32][32];
-    for (int i = 0; i < n; i++)
-        for (int j = 0; j < n; j++)
+    for (int i = 0; i < 32; i++)
+        for (int j = 0; j < 32; j++)
             a[i][j] = 100000; // initialize to inf
     scanf("%d", &n);
     for (int i = 0; i < n; i++)
@@ -21,7 +21,8 @@ int main()
                 a[i][j] = 100000;
         }
     scanf("%d", &k);
-    int visited[32] = {0};
+    int visited[32];
+    for (int i = 0; i < 32; i++) visited[i] = 0;
     visited[k - 1] = 1;
     for (int i = 0; i < n; i++)
     {
